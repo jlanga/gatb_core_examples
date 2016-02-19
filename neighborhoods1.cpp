@@ -3,7 +3,7 @@
 #undef NDEBUG
 #include <cassert>
 
-// Node neighbors management
+// Node neighbors management with nodes
 
 int main(int argc, char* argv[])
 {
