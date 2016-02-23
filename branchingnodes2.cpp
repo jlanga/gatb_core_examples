@@ -22,11 +22,12 @@ int main(int argc, char* argv[])
     try
     {
         // Create graph
-        Graph graph = Graph::create(
-            new BankStrings (sequences, ARRAY_SIZE(sequences)),
-            "-abundance-min 1 -verbose 0",
+        Graph graph = Graph::create (
+            new BankStrings (sequences, ARRAY_SIZE(sequences)), 
+            "-kmer-size %d  -abundance-min 1  -verbose 0",
             kmerSize
         );
+        
         // Get the first node
         Node node = graph.buildNode(sequences[0]);
         
